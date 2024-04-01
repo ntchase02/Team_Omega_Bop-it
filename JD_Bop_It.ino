@@ -96,7 +96,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   start_read = digitalRead(start_pin);
   cnt = 0;
-  print_text("WELCOME TO ECE BOP-IT");
+  print_text("WELCOME TO CIRC-IT");
   while (start_read || (cnt < max_limit && cnt > 0) ) {
 
     display.clearDisplay();
@@ -192,7 +192,7 @@ void loop() {
         print_text("CORRECT");
         //Serial.print("CORRECT\n");
         
-        tone(TONE_GEN, tone_freq[r_num], 500);
+        tone(TONE_GEN, 880, 500);
         delay(1000);
         display.clearDisplay();
         cnt++;
@@ -205,8 +205,11 @@ void loop() {
     print_text("YOU HAVE WON ECE BOPIT");
     //Serial.println("YOU HAVE WON ECE BOPIT");
     tone(TONE_GEN, tone_freq[0], 250);
+    delay(250);
     tone(TONE_GEN, tone_freq[1], 250);
+    delay(250);
     tone(TONE_GEN, tone_freq[2], 250);
+    delay(250);
     tone(TONE_GEN, 880, 250);
     display.display();
     delay(250);
