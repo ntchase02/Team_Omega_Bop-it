@@ -202,8 +202,8 @@ void loop() {
 
   // if you win
   if (cnt > max_limit) {
-    print_text("YOU HAVE WON ECE BOPIT");
-    //Serial.println("YOU HAVE WON ECE BOPIT");
+    print_text("YOU HAVE WON CIRC-IT");
+    //Serial.println("YOU HAVE WON CIRC-IT");
     tone(TONE_GEN, tone_freq[0], 250);
     delay(250);
     tone(TONE_GEN, tone_freq[1], 250);
